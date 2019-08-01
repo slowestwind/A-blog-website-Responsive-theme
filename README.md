@@ -3,13 +3,12 @@ This is a responsive theme for blog website, currently I have not include back-e
 
 here is screenshot of the theme
 #### header
-![./img/screenshot-header.png](screenshot-header)
 
+![header-image](./img/screenshot-header.png)
 
 
 #### and the footer
-![./img/screenshot-footer](screenshot-footer)
-
+![footer-img](./img/screenshot-footer.png)
 
 
 Feel free to use in your next blog website and if you want to contribute, Your most welcome.
