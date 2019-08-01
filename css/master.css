@@ -1,0 +1,388 @@
+/* google font links */
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+h1 {
+  font-family: 'Pacifico', cursive; color: #03dfed; font-weight: bold;
+  text-align: center;
+  text-shadow: -2px -2px 8px #000000;
+}
+
+/* navigation css */
+.navigation-section {
+  padding: 0px;
+  margin: 0px;
+  border-radius: 0px;
+
+  height: 100vh;
+  width: 100%;
+  background-image: url("/img/background.png");
+  background-size: cover;
+  display: block;
+}
+
+.logo{
+  margin-right: 10px;
+  padding-left: 0px;
+}
+
+.logo-img {
+  margin-left: 20px;
+  height: 100px;
+  width: 100px;
+  float: left;
+}
+
+.navbar .heading {
+  float: left;
+  margin-top: 25px;
+  margin-left: 20px;
+  font-size: 40px;
+  color: black;
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-link {
+  margin-top: 30px;
+  margin-right: 25px;
+  float: right;
+}
+
+.nav-link a {
+  padding: 10px;
+  font-size: 23px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.nav-link a:hover{
+  color: black;
+  font-weight: bold;
+}
+/* hide the responive navbar */
+.icon {
+  display: none;
+}
+
+/* responsive nav bar */
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the nav-link (.icon) */
+@media screen and (max-width: 600px) {
+  .logo{
+    display: none;
+  }
+  .nav-link{
+    margin-top: 20px;
+  }
+
+  .nav-link a{
+    font-size: 11px;
+    padding: 5px;
+  }
+  .navbar .heading {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 22px;
+    color: black;
+    font-family: 'Pacifico', cursive;
+  }
+}
+
+
+/* Newsletter */
+.intro {
+  display: flex;
+  margin-top: -80vh;
+  position:relative;
+}
+
+.intro-sub {
+  text-align: center;
+  margin: 50px;
+  padding-left: 35%;
+  font-family: 'Concert One', cursive;
+
+  font-weight: bold;
+  font-size: 80px;
+  position: relative;
+
+}
+em{
+  font-size: 90px;
+  font-family: 'Pacifico', cursive;
+}
+
+/* Mobile view css  */
+@media screen and (max-width: 600px) {
+  .intro-sub {
+    margin: 30px;
+    padding-left: 30%;
+    font-family: 'Concert One', cursive;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+
+
+  }
+  em{
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+  }
+}
+
+
+
+
+.selection-about {
+  margin: 150px;
+}
+
+/*  */
+.selection-about .row{
+  margin: 50px;
+  display: flex;
+}
+
+.selection-about .grid-column {
+  padding: 30px;
+  display: block;
+  font-size: 18px;
+}
+
+#about-us{
+  padding-top: 45px;
+}
+
+#about-image {
+  height: 60vh;
+  width: 100%;
+  background-image: url("/img/about-us.jpg");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px -10px 12px #888888;
+
+}
+
+/* h1 {
+  font-family: 'Pacifico', cursive; color: #03dfed; font-weight: bold;
+  text-align: center;
+  text-shadow: -2px -2px 8px #000000;
+} */
+.selection-about button {
+  width: 200px;
+  border-radius: 50px;
+  background-color: black;
+  color: #03dfed;
+}
+
+@media screen and (max-width:600px ) {
+  .row {
+    margin: 0px;
+    padding: 0px;
+    flex-direction: row;
+  }
+  .grid-column {
+    margin: 0px;
+    padding: 0px;
+    flex: 50%;
+  }
+  #about-image {
+    display: none;
+  }
+}
+
+.scrolling-wrapper {
+  display: flex;
+  width: 100%
+  height 300px;
+}
+
+/* Hidding the scroll bar */
+.card::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+
+
+  min-width: 350px;
+  height: 350px;
+  margin: 5px;
+  background-image: url("/img/post1.jpg");
+  background-position: center;
+  background-size: cover;
+  font-weight: bold
+  filter: blur(0.1px);
+  -webkit-filter: blur(0.1px);
+
+
+}
+
+.blog {
+  display: flex;
+  overflow: auto;
+  height: auto;
+  width: 100%;
+
+}
+
+.card {
+  overflow-x: auto;
+  text-align: center;
+}
+
+.card .card-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+/* footer */
+.footer {
+  margin-top: -15vh;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/img/footer.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.social-icon {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.fa {
+  padding: 10px;
+}
+
+.services {
+  color: white;
+  font-weight: bold;
+
+
+}
+
+.footer h5 {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+
+.websites {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+.footer .row {
+  padding-top: 40vh;
+  display: flex;
+}
+
+.footer .grid-column {
+  flex: 25%;
+  height: 200px;
+  padding: 100px;
+}
+
+
+/* responive view css */
+@media screen and (max-width: 600px) {
+  .footer {
+    margin-top: 6vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/footer-mobile.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .footer .row {
+    margin-top: 0px;
+    padding-top: 20px;
+    display: block;
+    display:
+  }
+
+  .footer .grid-column {
+    margin-top: -35px;
+    font-size: 14px;
+    height:  50px;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+}
+
+.footer-copyright {
+  margin-top: 50px;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+/* footer for  screem width 400 */
+@media screen and (max-width: 450px) {
+  .footer {
+    margin-top: 6vh;
+    width: 100%;
+    height: 100vh;
+    background-image: url("/img/footer-mobile.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  .footer .row {
+    margin-top: 0px;
+    padding-top: 50px;
+    display: block;
+    display:
+  }
+
+  .footer .grid-column {
+    margin-top: -35px;
+    font-size: 14px;
+    height:  50px;
+    text-align: center;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+}
